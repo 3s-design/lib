@@ -7,6 +7,6 @@ namespace classmap;
 class Lib
 {
 	function example (){
-		echo "2";
+		echo "3";
 	}
 }
