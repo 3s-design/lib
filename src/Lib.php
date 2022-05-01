@@ -9,7 +9,7 @@ class Lib
 	public $allowSymbols = ["(", ")", "\n", "\t", "\r"];
 	function example ($string): bool
 	{
-		$arrRes = [];
+		$arrRes = $this->allowSymbols;
 		$arr = str_split($string);
 		foreach ($arr as $key => $value) {
 			if (in_array($value, $this->allowSymbols)) {
