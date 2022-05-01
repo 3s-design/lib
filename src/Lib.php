@@ -13,7 +13,7 @@ class Lib
 		$arr = str_split($string);
 		foreach ($arr as $key => $value) {
 			if (in_array($value, $this->allowSymbols)) {
-				$arrRes[$value]++;
+				$arrRes["$value"]++;
 			} else {
 				throw new \InvalidArgumentException('found symbols'.$value);
 			}
