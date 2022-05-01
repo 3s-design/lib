@@ -13,13 +13,13 @@ class Lib
 		$arr = str_split($string);
 		foreach ($arr as $key => $value) {
 			if (in_array($value, $this->allowSymbols)) {
-				$arrRes["$value"]++;
+				$arrRes[(string)$value]++;
 			} else {
 				throw new \InvalidArgumentException('found symbols'.$value);
 			}
 		}
 
-		if (count($arrRes["("]) == count($arrRes[")"])){
+		if ($arrRes["("] == $arrRes[")"]){
 			return true;
 		}else{
 			return false;
