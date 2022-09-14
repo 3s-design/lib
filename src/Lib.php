@@ -1,12 +1,13 @@
 <?php
-
-
 namespace classmap;
-
 
 class Lib
 {
 	public $allowSymbols = ["(", ")", "\n", "\t", "\r"];
+	function setAllow ()
+    {
+        print_r('');
+    }
 	function example ($string): bool
 	{
 		$arrRes["("] = 0;
