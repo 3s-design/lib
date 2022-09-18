@@ -8,6 +8,10 @@ class Lib
     {
         print_r('');
     }
+    function key ()
+    {
+        print_r('');
+    }
 	function example ($string): bool
 	{
 		$arrRes["("] = 0;
